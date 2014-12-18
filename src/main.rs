@@ -53,7 +53,10 @@ mod tests {
             timer::sleep(Duration::milliseconds(10));
         }
 
-        assert!(fuzzy_cmp(tc.get_remaining_time(), 110, 10));
+        let rt = tc.get_remaining_time();
+
+        // 40 seems to be a valid thereshold for running under valgrind.
+        assert!(fuzzy_cmp(rt, 110, 40));
     }
 
     #[test]
