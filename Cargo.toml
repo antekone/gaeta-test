@@ -8,4 +8,4 @@ authors = ["Grzegorz Antoniak <ga@anadoxin.org>"]
 git = "http://github.com/antekone/gaeta.git"
 
 [dependencies]
-time="0.1.3"
+time="*"
