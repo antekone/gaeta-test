@@ -1,0 +1,11 @@
+[package]
+
+name = "gaeta-test"
+version = "0.0.1"
+authors = ["Grzegorz Antoniak <ga@anadoxin.org>"]
+
+[dependencies.gaeta]
+git = "http://github.com/antekone/gaeta.git"
+
+[dependencies]
+time="0.1.3"
